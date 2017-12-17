@@ -6,6 +6,8 @@
   "author": "padedou",
   "license": "MIT",
   "devDependencies": {
+    "standard": "^10.0.3",
+    "standard-loader": "^6.0.1",
     "webpack": "^3.10.0"
   },
   "scripts": {
