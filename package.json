@@ -2,10 +2,13 @@
   "name": "reqsponser",
   "version": "0.0.0",
   "description": "Request and view HTTP responses",
-  "main": "index.js",
+  "main": "./src/app.js",
   "author": "padedou",
   "license": "MIT",
   "devDependencies": {
     "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "npx webpack && cp ./src/index.html ./dist/index.html"
   }
 }
