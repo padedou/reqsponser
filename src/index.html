@@ -2,7 +2,42 @@
   <head>
     <script src="./bundle.js"></script>
     <title>reqsponser</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <div id="container_request">
+        <label for="input_url">URL:   </label>
+        <input type="text" id="input_url">
+        <br><br>
+
+        <label for="select_method">Method:</label>
+        <select id="select_method">
+          <option value="GET">GET</option>
+          <option value="HEAD">HEAD</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="DELETE">DELETE</option>
+          <option value="PATCH">PATCH</option>
+        </select>
+        <br><br>
+
+        <!--<label for="textarea_request_body">Request body:</label>-->
+        Request body:
+        <br>
+        <textarea id="textarea_request_body" rows="40" cols="60"></textarea>
+        <br><br>
+
+        <button id="btn_send">Send</button>
+      </div>
+      <div id="container_response">
+        RESPONSE
+      </div>
+    </div>
   </body>
 </html>
