@@ -1,0 +1,11 @@
+{
+  "name": "reqsponser",
+  "version": "0.0.0",
+  "description": "Request and view HTTP responses",
+  "main": "index.js",
+  "author": "padedou",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
