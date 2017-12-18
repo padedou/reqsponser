@@ -3,15 +3,35 @@
     <script src="./bundle.js"></script>
     <title>reqsponser</title>
     <style>
-      .container {
+      #app_container {
         display: flex;
-        justify-content: space-between;
+      }
+
+      #container_request {
+        flex-grow: 1;
+        padding: 10px;
+        margin: 10px;
+        /*background-color: red;*/
+      }
+
+      #container_response {
+        flex-grow: 10;
+        padding: 10px;
+        margin: 10px;
+        /*background-color: blue;*/
+      }
+
+      #separator {
+        display: flex;
+        flex-grow: 0.1;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div id="app_container">
       <div id="container_request">
+        <h1> Request </h1>
+
         <label for="input_url">URL:   </label>
         <input type="text" id="input_url">
         <br><br>
@@ -27,7 +47,6 @@
         </select>
         <br><br>
 
-        <!--<label for="textarea_request_body">Request body:</label>-->
         Request body:
         <br>
         <textarea id="textarea_request_body" rows="40" cols="60"></textarea>
@@ -35,8 +54,13 @@
 
         <button id="btn_send">Send</button>
       </div>
+
+      <div id="separator">
+        <hr>
+      </div>
+
       <div id="container_response">
-        RESPONSE
+        <h1> Response </h1>
       </div>
     </div>
   </body>
