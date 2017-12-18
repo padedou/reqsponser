@@ -7,18 +7,17 @@
         display: flex;
       }
 
-      #container_request {
-        flex-grow: 1;
+      .container_req-res {
         padding: 10px;
         margin: 10px;
-        /*background-color: red;*/
+      }
+
+      #container_request {
+        flex-grow: 1;
       }
 
       #container_response {
         flex-grow: 10;
-        padding: 10px;
-        margin: 10px;
-        /*background-color: blue;*/
       }
 
       #separator {
@@ -29,7 +28,7 @@
   </head>
   <body>
     <div id="app_container">
-      <div id="container_request">
+      <div id="container_request" class="container_req-res">
         <h1> Request </h1>
 
         <label for="input_url">URL:   </label>
@@ -59,7 +58,7 @@
         <hr>
       </div>
 
-      <div id="container_response">
+      <div id="container_response" class="container_req-res">
         <h1> Response </h1>
       </div>
     </div>
