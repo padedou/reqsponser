@@ -11,6 +11,7 @@
     "webpack": "^3.10.0"
   },
   "scripts": {
-    "build": "npx webpack && cp ./src/index.html ./dist/index.html"
+    "build": "npx webpack && cp ./src/index.html ./dist/index.html",
+    "build-index": "cp ./src/index.html ./dist/index.html"
   }
 }
