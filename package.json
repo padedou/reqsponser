@@ -12,6 +12,8 @@
   },
   "scripts": {
     "build": "npx webpack && cp ./src/index.html ./dist/index.html",
-    "build-index": "cp ./src/index.html ./dist/index.html"
+    "build-index": "cp ./src/index.html ./dist/index.html",
+    "test": "npx standard ./src/**/**.js",
+    "test-fix": "npx standard ./src/**/**.js --fix"
   }
 }
