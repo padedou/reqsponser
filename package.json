@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "npx webpack && cp ./src/index.html ./dist/index.html",
-    "build-no-linting": "npx webpack --config webpack.nolinting.config.js",
+    "build-no-linting": "npx webpack --config webpack.nolinting.config.js && cp ./src/index.html ./dist/index.html",
     "build-index": "cp ./src/index.html ./dist/index.html",
     "test": "npx standard ./src/**/**.js",
     "test-fix": "npx standard ./src/**/**.js --fix"
