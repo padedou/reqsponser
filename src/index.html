@@ -41,6 +41,69 @@
 
         <label for="select_method">Method:</label>
         <select id="select_method">
+
+<head>
+  <title>reqsponser</title>
+  <style>
+    #app_container {
+      display: flex;
+    }
+
+    .container_req-res {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #container_request {
+      flex-grow: 1;
+    }
+
+    #container_response {
+      flex-grow: 10;
+    }
+
+    #separator {
+      display: flex;
+      flex-grow: 0.1;
+    }
+
+    .header_key {
+      color: blue
+    }
+
+    .string {
+      color: green;
+    }
+
+    .number {
+      color: darkorange;
+    }
+
+    .boolean {
+      color: blue;
+    }
+
+    .null {
+      color: magenta;
+    }
+
+    .key {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app_container">
+    <div id="container_request" class="container_req-res">
+      <h1> Request </h1>
+
+      <label for="input_url">URL:   </label>
+      <input type="text" id="input_url">
+      <br><br>
+
+      <label for="select_method">Method:</label>
+      <select id="select_method">
           <option value="GET">GET</option>
           <option value="HEAD">HEAD</option>
           <option value="POST">POST</option>
@@ -48,33 +111,32 @@
           <option value="DELETE">DELETE</option>
           <option value="PATCH">PATCH</option>
         </select>
-        <br><br>
+      <br><br> Request body:
+      <br>
+      <textarea id="textarea_request_body" rows="40" cols="60"></textarea>
+      <br><br>
 
-        Request body:
-        <br>
-        <textarea id="textarea_request_body" rows="40" cols="60"></textarea>
-        <br><br>
+      <button id="btn_send">Send</button>
+    </div>
 
-        <button id="btn_send">Send</button>
+    <div id="separator">
+      <hr>
+    </div>
+
+    <div id="container_response" class="container_req-res">
+      <h1> Response </h1>
+      <h2> Headers </h2>
+      <div id="response_headers">
+
       </div>
+      <hr>
+      <h2> Content </h2>
+      <div id="response_content">
 
-      <div id="separator">
-        <hr>
-      </div>
-
-      <div id="container_response" class="container_req-res">
-        <h1> Response </h1>
-        <h2> Headers </h2>
-        <div id="response_headers">
-
-        </div>
-        <hr>
-        <h2> Content </h2>
-        <div id="response_content">
-
-        </div>
       </div>
     </div>
-    <script src="./bundle.js"></script>
-  </body>
+  </div>
+  <script src="./bundle.js"></script>
+</body>
+
 </html>
