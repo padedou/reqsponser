@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title>reqsponser</title>
   <style>
@@ -50,18 +49,18 @@
     }
   </style>
 </head>
+  <body>
+    <div id="app_container">
+      <div id="container_request" class="container_req-res">
+        <h1> Request </h1>
 
-<body>
-  <div id="app_container">
-    <div id="container_request" class="container_req-res">
-      <h1> Request </h1>
+        <label for="input_url">URL:   </label>
+        <input type="text" id="input_url">
+        <br><br>
 
-      <label for="input_url">URL:   </label>
-      <input type="text" id="input_url">
-      <br><br>
+        <label for="select_method">Method:</label>
+        <select id="select_method">
 
-      <label for="select_method">Method:</label>
-      <select id="select_method">
           <option value="GET">GET</option>
           <option value="HEAD">HEAD</option>
           <option value="POST">POST</option>
